@@ -16,4 +16,12 @@ public class BooksDAO {
     public void addBooks(Book book) {
         list.getBooks().add(book);
     }
+    public void removeBooks(Integer id) {
+        for (Book book : list.getBooks()) {
+            if (book.getId() == id) {
+                Integer removed = list.getBooks().indexOf(book);
+                list.getBooks().remove(removed);
+            }
+        }
+    }
 }

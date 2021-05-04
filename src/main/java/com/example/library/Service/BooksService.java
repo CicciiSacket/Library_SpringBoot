@@ -3,6 +3,8 @@ package com.example.library;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.example.library.Book;
+
 public class BooksService {
 
     private List<Book> booksList;
@@ -17,4 +19,5 @@ public class BooksService {
     public void setBooks(List<Book> booksList) {
         this.booksList = booksList;
     }
+
 }

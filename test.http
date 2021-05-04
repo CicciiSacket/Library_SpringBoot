@@ -1,0 +1,11 @@
+GET http://localhost:8080/books/
+###
+
+POST http://localhost:8080/books/
+Content-Type: application/json
+
+{"title": "C Programming","author": "W3School"}
+
+###
+DELETE  http://localhost:8080/books/2
+###
