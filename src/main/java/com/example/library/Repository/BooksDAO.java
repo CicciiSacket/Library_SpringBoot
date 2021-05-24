@@ -19,8 +19,7 @@ public class BooksDAO {
     public void removeBooks(Integer id) {
         for (Book book : list.getBooks()) {
             if (book.getId() == id) {
-                Integer removed = list.getBooks().indexOf(book);
-                list.getBooks().remove(removed);
+                list.getBooks().remove(list.getBooks().indexOf(book));
             }
         }
     }
